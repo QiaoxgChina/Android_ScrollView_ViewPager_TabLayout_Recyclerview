@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/masterInfo_scrollView"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#fcfcfc">
+
+                <ImageView
+                    android:id="@+id/masterInfo_bgPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/u18051" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#50000000"
+                    android:paddingLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/masterInfo_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/u18051"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/masterInfo_icon"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/masterInfo_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="造梦者独慕溪"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/masterInfo_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="钻石店主  人气 3135"
+                            android:textColor="#fff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/masterInfo_tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                app:tabIndicatorHeight="1dp"
+                app:tabTextColor="#000"
+                app:tabSelectedTextColor="@color/colorAccent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.qiaoxg.scrollviewdemo.ChildViewPager
+                    android:id="@+id/masterInfo_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <View
+                android:id="@+id/titleBar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.0"
+                android:background="#fff" />
+
+            <LinearLayout
+                android:id="@+id/masterInfo_back"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/label_left_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleBar_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="0.0"
+                android:text="造梦者独慕溪"
+                android:textColor="#333333"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#fcfcfc" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/masterInfo_title_tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                app:tabTextColor="#000"
+                app:tabSelectedTextColor="@color/colorAccent"
+                app:tabIndicatorHeight="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

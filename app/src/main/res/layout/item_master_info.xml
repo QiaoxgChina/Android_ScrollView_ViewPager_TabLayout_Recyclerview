@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/item_love"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/username_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/u18051" />
+
+                <TextView
+                    android:id="@+id/username_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="店主昵称店主昵称店主昵称店主昵称店主昵称店主昵称店主昵称"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_love"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/item_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="1234"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3dp"
+            android:text="你不尝试着做些能力之外的事情，就永远无法成长。所以，不要害怕，大胆地去做尝试！"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:maxHeight="250dp"
+            android:minHeight="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/u18051" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="35dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="1234"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="1234"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="#fcfcfc"/>
+
+    </LinearLayout>
+
+</LinearLayout>
